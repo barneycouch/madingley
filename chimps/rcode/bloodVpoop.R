@@ -2,18 +2,6 @@ library(ggplot2)
 setwd("~/Dropbox/code/madingley/chimps/chimp-DatasetS1S2/Dataset_S2")
 chr21 <- read.table("Chr21Genotypes.txt",head=T)
 
-compareBloodPoop <- function(chimpname) {
-  setwd("~/Dropbox/code/madingley/chimps/chimp-DatasetS1S2/Dataset_S2")
-  chr21 <- read.table("Chr21Genotypes.txt",head=T)
-  bloodcol <- paste("Blood.", chimpname, sep="")
-  poopcol <- paste("Poop.", chimpname, sep="")
-  bloodtable <- as.data.frame(table(chr21$bloodcol))
-  pooptable <- as.data.frame(table(chr21$poopcol))
-  return(bloodtable)
-}
-
-
-
 peanutblood <- as.data.frame(table(chr21$Blood.peanut))
 peanutpoop <- as.data.frame(table(chr21$Poop.peanut))
 peanutboth <- merge(peanutblood, peanutpoop, by="Var1")
