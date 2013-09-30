@@ -1,0 +1,35 @@
+Dataset S1:
+
+Filtered (after sub-sampling one read per aligned start position per strand, to avoid any potential post-ligation or post-capture amplification bias) sequence read coverage summary data.
+
+See SamTools.sourceforge.net (pileup format) for details. The number of sequence reads with each nucleotide (uppercase for reads aligning to the forward strand, lowercase for reads aligning to the reverse strand) for each targeted position on chromosomes 21 and X. We filtered sites with >1 aligned read suggesting a deletion relative to the reference sequence (Deleted) and 1 or more reads with an insertion relative to the reference (Indels).
+
+We filtered out entire regions if they contained one or more 76 bp sequences that aligned elsewhere in the chimpanzee genome using relaxed alignment criteria (See Materials and Methods for details).  The filtered regions on chromosome 21 were: 49, 72, 74, 88, 91, 111, 115, 137, 144, 181, 186, 194, 205, 255, 269, 280, 320, 358, 369. The filtered regions on chromosome X were: 14, 15, 37, 46, 49, 79, 80, 83, 85, 88, 94, 95, 108, 112, 114, 117, 124, 126, 138, 183, 198.
+
+Lane/ Sample information:
+R3L1: Ptr 91A016 (Coty) Fecal [this is a duplicate lane sequence from the same library as R3L7 and was not used in the analysis]
+R3L2: Ptr A1A005 (Kierra) Fecal [this is a duplicate lane sequence from the same library as R3L7 and was not used in the analysis]
+R3L3: Ptr 91A010 (Peanut) Fecal
+R3L4: Ptr A2A009 (Sopulu) Fecal
+R3L5: Ptr X161 (Judd) Fecal
+R3L6: Ptr 93A009 (Flint) Blood
+R3L7: Ptr 91A016 (Coty) Fecal
+R3L8: Ptr A1A005 (Kierra) Fecal
+R4L1. Ptr 93A009 (Flint) Fecal
+R4L2. Ptr A255B (Rusty) Fecal [these are fecal DNA data for a 7th chimpanzee individual, not used in the analysis - there are not corresponding blood DNA data for this individual, but the fecal DNA data alone may be useful for any further studies of chimpanzee population genetic diversity]
+R4L3. Ptr A2A004 (Arthur) Fecal [these are fecal DNA data for a 8th chimpanzee individual, not used in the analysis - there are not corresponding blood DNA data for this individual, but the fecal DNA data alone may be useful for any further studies of chimpanzee population genetic diversity]
+R4L4. Ptr 91A010 (Peanut) Blood
+R4L5. Ptr 91A016 (Coty) Blood
+R4L6. Ptr A1A005 (Kierra) Blood
+R4L7. Ptr A2A009 (Sopulu) Blood
+R4L8. Ptr X161 (Judd) Blood
+
+Assembled mitochondrial genome sequences are also provided.
+
+Dataset S2:
+
+Genotype calls for all sites with identified heterozygous sites in one or more individuals or homozygous differences between two or more individuals. Genotypes are not called for samples at sites with insufficient coverage for SNP identification (such sites indicated by "NA").
+
+
+
+ 
