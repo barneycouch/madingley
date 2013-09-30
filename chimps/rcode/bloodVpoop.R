@@ -16,7 +16,6 @@ compareBloodPoop <- function(chimpname) {
 
 peanutblood <- as.data.frame(table(chr21$Blood.peanut))
 peanutpoop <- as.data.frame(table(chr21$Poop.peanut))
-#ggplot(peanutblood,aes(x=Var1, y=Freq)) + geom_point()
 peanutboth <- merge(peanutblood, peanutpoop, by="Var1")
 names(peanutboth)[2] <- "Blood"
 names(peanutboth)[3] <- "Poop"
