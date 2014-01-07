@@ -3,6 +3,8 @@ library(reshape)
 setwd("~/Dropbox/code/madingley/chimps/chimp-DatasetS1S2/Dataset_S2")
 chr21 <- read.table("Chr21Genotypes.txt",head=T)
 
+
+###GRAPH DIFFERENCES BETWEEN BLOOD & POOP DATA###
 compareBloodPoop <- function(chimpname) {
   bloodcol <- paste("Blood.", chimpname, sep="")
   poopcol <- paste("Poop.", chimpname, sep="")
